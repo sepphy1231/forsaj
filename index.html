@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love</title>
+    <style>
+        /* Global Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: #ff7bcc; /* Peach background */
+            color: #333;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            max-width: 700px;
+            background-color: #FFF;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #fa00a7; /* Coral for main header */
+        }
+        p {
+            font-size: 1.2em;
+            color: #333;
+            margin-top: 20px;
+        }
+        /* Heart Button */
+        .heart {
+            font-size: 3em;
+            color: #FF6F61;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .heart:hover {
+            transform: scale(1.2);
+        }
+        /* Hidden Message */
+        .hidden-message {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #4A4A4A;
+            line-height: 1.6;
+            animation: fadeIn 1s ease-in-out;
+        }
+        /* Photo Gallery */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
+            object-fit: cover;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        /* Video */
+        .video-container {
+            margin-top: 20px;
+        }
+        .video-container video {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>For My Love ❤️</h1>
+        <p>Hi miss, I have something special to share with you uhm kabaliwan lng hehe.</p>
+        <p>Click the heart below to reveal my message!</p>
+        
+        <!-- Heart Button -->
+        <div class="heart" onclick="revealMessage()">❤️</div>
+
+        <!-- Hidden Message -->
+        <div id="message" class="hidden-message">
+            <p>HI my honey bunchsugarhampiampiam every day with you is like a new chapter of a beautiful love story. You are the most byUtIpoL EagIirl in ThE woRLd my love, my forever my BaBy my HampIamPiam hayss tanan lahat all naa na sayo. I am so lucky to have you in my life saj always remember i am always here for you kAhit AnOnG hPaniNGs man yAN, and I can’t wait for all the memories we have yet to create together. I love you more than words can express spokining dalars bai by shatjipiti. 💖</p>
+            
+            <!-- Photo Gallery -->
+            <div class="gallery">
+                <img src="fave.jpg" alt="Photo 1">
+                <img src="hays.jpg" alt="Photo 2">
+                <img src="ngi.jpeg" alt="Photo 3">
+                <!-- Add more images as needed -->
+            </div>
+
+            <!-- Video Container -->
+            <div class="video-container">
+                <video controls>
+                    <source src="meyou.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function revealMessage() {
+            document.getElementById("message").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
